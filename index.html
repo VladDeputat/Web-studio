@@ -13,13 +13,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!-- header container -->
     <header class="header">
       <div class="container">
-        <a class="header-logo" href="./index.html"><span>Web</span>Studio</a>
+        <a class="logo" href="./index.html"><span class="web">Web</span>Studio</a>
         <nav class="nav">
           <ul class="nav-list">
             <li class="item">
@@ -34,9 +34,9 @@
           </ul>
         </nav>
         <address>
-          <ul class="address-list">
+          <ul class="contact-list">
             <li class="item">
-              <a class="header-contact" href="mailto:info@devstudio.com">
+              <a class="contact" href="mailto:info@devstudio.com">
                 <svg class="icon" width="16" height="12">
                   <use href="./img/sprite.svg#icon-mail"></use>
                 </svg>
@@ -44,7 +44,7 @@
               >
             </li>
             <li class="item">
-              <a class="header-contact" href="tel:+380961111111">
+              <a class="contact" href="tel:+380961111111">
                 <svg class="icon" width="10" height="16">
                   <use href="./img/sprite.svg#icon-phone"></use>
                 </svg>
@@ -61,7 +61,7 @@
         <div class="container">
           <div class="hero-content">
             <h1 class="hero-heading">Эффективные решения для вашего бизнеса</h1>
-            <button class="make-order-button" data-modal-open>Заказать услугу</button>
+            <button class="button" data-modal-open>Заказать услугу</button>
           </div>
         </div>
       </section>
@@ -332,12 +332,12 @@
     <footer class="footer">
       <section class="container">
         <div class="info">
-          <a class="footer-logo" href="./index.html"><span>Web</span>Studio</a>
+          <a class="logo" href="./index.html"><span class="web">Web</span>Studio</a>
           <address>
             <ul>
-              <li class="item">
+              <li>
                 <a
-                  class="footer-address"
+                  class="footer-contact location"
                   href="https://goo.gl/maps/swV6j4v5GU542pUBA"
                   target="_blank"
                   rel="searchonmaps"
@@ -345,10 +345,10 @@
                   г. Киев, пр-т Леси Украинки, 26
                 </a>
               </li>
-              <li class="item">
+              <li>
                 <a class="footer-contact" href="mailto:info@example.com">info@example.com </a>
               </li>
-              <li class="item">
+              <li>
                 <a class="footer-contact" href="tel:+380991111111">+38 099 111 11 11 </a>
               </li>
             </ul>
@@ -356,30 +356,30 @@
         </div>
         <div class="footer-list">
           <h3 class="heading-footer">Присоединяйтесь</h3>
-          <ul class="footer-links-list">
-            <li class="footer-links-list-item">
-              <a class="footer-links-icon" href="">
+          <ul class="link-list">
+            <li>
+              <a class="link-icon" href="">
                 <svg class="icon" width="20" height="20">
                   <use href="./img/sprite.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-links-list-item">
-              <a class="footer-links-icon" href="">
+            <li>
+              <a class="link-icon" href="">
                 <svg class="icon" width="20" height="20">
                   <use href="./img/sprite.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-links-list-item">
-              <a class="footer-links-icon" href="">
+            <li>
+              <a class="link-icon" href="">
                 <svg class="icon" width="20" height="20">
                   <use href="./img/sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-links-list-item">
-              <a class="footer-links-icon" href="">
+            <li>
+              <a class="link-icon" href="">
                 <svg class="icon" width="20" height="20">
                   <use href="./img/sprite.svg#icon-linkedin"></use>
                 </svg>
@@ -391,9 +391,9 @@
           <h3 class="heading-footer">Подпишитесь на рассылку</h3>
           <form class="form-footer" action="#">
             <input class="input-email" type="email" placeholder="E-mail" name="mail" id="mail" />
-            <button class="button-send" type="submit">
+            <button class="button" type="submit">
               <span>Подписаться</span>
-              <svg class="icon-send-footer" width="24" height="24">
+              <svg class="icon-send" width="24" height="24">
                 <use href="./img/sprite.svg#icon-send"></use>
               </svg>
             </button>
@@ -449,16 +449,23 @@
             <li>
               <label class="form-label">
                 <span class="input-title">Комментарий</span>
-                <textarea class="text-area-form" name="comment" placeholder="Введите текст"></textarea>
+                <textarea class="form-input comment" name="comment" placeholder="Введите текст"></textarea>
               </label>
             </li>
           </ul>
           <div class="checkbox-button-wrapper">
-            <input type="checkbox" name="checkbox" id="policy" value="policy-accept" class="policy-checkbox visually-hidden" required />
+            <input
+              type="checkbox"
+              name="checkbox"
+              id="policy"
+              value="policy-accept"
+              class="policy-checkbox visually-hidden"
+              required
+            />
             <label for="policy" class="checkbox-label">
               Соглашаюсь с рассылкой и принимаю <a class="conditions-link" href="#">Условия договора</a>
             </label>
-            <button type="submit" class="button-send-form">Отправить</button>
+            <button type="submit" class="button">Отправить</button>
           </div>
         </form>
       </div>
