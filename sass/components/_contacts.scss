@@ -1,10 +1,4 @@
 .contact {
-  color: #757575;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
   fill: #757575;
   display: flex;
   align-items: center;
@@ -29,11 +23,6 @@
 .footer-contact {
   display: block;
   margin-top: 9px;
-  color: rgba(255, 255, 255, 0.6);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
   transition: all 250ms var(--hover-function);
 
   &:hover,

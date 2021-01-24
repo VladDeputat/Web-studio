@@ -15,8 +15,6 @@ html {
 /* ------body------ */
 body {
   background-color: #ffffff;
-  font-family: 'roboto', sans-serif;
-  letter-spacing: 0.03em;
 }
 
 /*---- removing decor ---*/
@@ -93,6 +91,172 @@ button {
   --hover-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+body {
+  font-family: 'roboto', sans-serif;
+  letter-spacing: 0.03em;
+}
+
+.logo {
+  color: #000000;
+  font-family: 'raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.portfolio-button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+}
+
+.button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.contact {
+  color: #757575;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.footer-contact {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.label-heading {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.heading-footer {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.nav-link {
+  color: var(--primary-heading-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.hero-heading {
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.form-heading {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.form-label {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+
+.form-input {
+  line-height: 1.143;
+  letter-spacing: 0.01em;
+  font-size: 16px;
+}
+
+.form-list .comment {
+  font-size: 14px;
+}
+
+.checkbox-label {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.portfolio .name {
+  color: var(--primary-heading-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+}
+
+.description {
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+.thumb-description {
+  font-size: 18px;
+  line-height: 1.56;
+  color: #ffffff;
+}
+
+.heading {
+  color: var(--primary-heading-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+}
+
+.strength .name {
+  color: var(--primary-heading-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.strength .discription {
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.team .name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+.team .description {
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+}
+
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
@@ -150,14 +314,6 @@ button {
   transition: color 250ms var(--hover-function);
 }
 
-.nav-link {
-  color: var(--primary-heading-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
-
 .nav-link.current {
   color: var(--accent-color);
   display: block;
@@ -180,39 +336,17 @@ button {
 }
 
 .hero-heading {
-  color: #ffffff;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
   margin-bottom: 30px;
 }
 
 .heading {
-  color: var(--primary-heading-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
   text-align: center;
   margin-bottom: 50px;
 }
 
 .strength .name {
-  color: var(--primary-heading-color);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
   margin-top: 30px;
   margin-bottom: 10px;
-}
-
-.strength .discription {
-  color: var(--primary-text-color);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
 }
 
 .strength-list {
@@ -275,12 +409,7 @@ button {
 }
 
 .label-heading {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
   text-align: center;
-  text-transform: uppercase;
-  color: #ffffff;
 }
 
 .team-list {
@@ -289,10 +418,10 @@ button {
 }
 
 .team-list .item {
-  background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
   flex-basis: calc(100% / 4 - 30px);
+  background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
   margin-left: 30px;
 }
 
@@ -302,18 +431,11 @@ button {
 }
 
 .team .name {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
   text-align: center;
   margin-bottom: 10px;
 }
 
 .team .description {
-  color: var(--primary-text-color);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.18;
   text-align: center;
   margin-bottom: 16px;
 }
@@ -352,20 +474,6 @@ button {
 .client-link:hover .icon, .client-link:focus .icon,
 .client-link:focus .icon {
   fill: var(--accent-color);
-}
-
-.portfolio .name {
-  color: var(--primary-heading-color);
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-}
-
-.description {
-  color: var(--primary-text-color);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.87;
 }
 
 .project-list {
@@ -409,9 +517,6 @@ button {
   height: 100%;
   padding: 63px 24px;
   transition: all 250ms var(--hover-function);
-  font-size: 18px;
-  line-height: 1.56;
-  color: #ffffff;
   opacity: 0;
   transform: translatey(100%);
 }
@@ -462,20 +567,11 @@ button {
 }
 
 .form-heading {
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 23px;
-  text-align: center;
-  letter-spacing: 0.03em;
   margin-bottom: 12px;
-  color: #212121;
+  text-align: center;
 }
 
 .form-label {
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
-  color: #757575;
   width: 100%;
   display: inline-block;
 }
@@ -490,11 +586,8 @@ button {
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  line-height: 1.143;
-  letter-spacing: 0.01em;
   height: 40px;
   padding-left: 42px;
-  font-size: 16px;
   margin-bottom: 10px;
   transition: border-color 250ms var(--hover-function);
 }
@@ -514,7 +607,6 @@ button {
   resize: none;
   margin-top: 4px;
   margin-bottom: 20px;
-  font-size: 14px;
 }
 
 .form-list .comment::placeholder {
@@ -529,10 +621,6 @@ button {
 }
 
 .checkbox-label {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #757575;
   cursor: pointer;
   display: block;
   position: relative;
@@ -581,11 +669,6 @@ button {
 }
 
 .heading-footer {
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #ffffff;
   margin-bottom: 20px;
 }
 
@@ -615,14 +698,6 @@ button {
   border-radius: 4px;
 }
 
-.logo {
-  color: #000000;
-  font-family: 'raleway', sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-}
-
 .web {
   color: var(--accent-color);
 }
@@ -643,10 +718,6 @@ button {
 
 .portfolio-button {
   background-color: #f5f4fa;
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
   border-radius: 4px;
   padding: 6px 22px 6px 22px;
   transition: all 250ms var(--hover-function);
@@ -661,12 +732,6 @@ button {
 .button {
   background-color: var(--accent-color);
   color: #ffffff;
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  text-align: center;
-  letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   transition: background 250ms var(--hover-function);
@@ -699,12 +764,6 @@ button {
 }
 
 .contact {
-  color: #757575;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
   fill: #757575;
   display: flex;
   align-items: center;
@@ -728,11 +787,6 @@ button {
 .footer-contact {
   display: block;
   margin-top: 9px;
-  color: rgba(255, 255, 255, 0.6);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
   transition: all 250ms var(--hover-function);
 }
 

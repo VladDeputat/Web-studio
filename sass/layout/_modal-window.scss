@@ -39,20 +39,11 @@
 }
 
 .form-heading {
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 23px;
-  text-align: center;
-  letter-spacing: 0.03em;
   margin-bottom: 12px;
-  color: #212121;
+  text-align: center;
 }
 
 .form-label {
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
-  color: #757575;
   width: 100%;
   display: inline-block;
 }
@@ -67,11 +58,8 @@
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  line-height: 1.143;
-  letter-spacing: 0.01em;
   height: 40px;
   padding-left: 42px;
-  font-size: 16px;
   margin-bottom: 10px;
   transition: border-color 250ms var(--hover-function);
 
@@ -91,7 +79,6 @@
   resize: none;
   margin-top: 4px;
   margin-bottom: 20px;
-  font-size: 14px;
 
   &::placeholder {
     color: rgba(117, 117, 117, 0.5);
@@ -106,10 +93,6 @@
 }
 
 .checkbox-label {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #757575;
   cursor: pointer;
   display: block;
   position: relative;
