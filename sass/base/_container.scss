@@ -4,7 +4,7 @@
 }
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -16,30 +16,7 @@
   align-items: center;
 }
 
-.hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  margin-left: auto;
-  margin-right: auto;
-  height: 600px;
-  max-width: 1600px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: var(--hero-and-footer-background-color);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero.jpg);
-}
 
-.businesses {
-  padding-top: 0px;
-}
 
-.team {
-  background-color: var(--team-section-background-color);
-}
 
-.footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-color: var(--hero-and-footer-background-color);
-}
+

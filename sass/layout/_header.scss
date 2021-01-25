@@ -19,8 +19,12 @@
   fill: var(--accent-color);
 }
 
-.nav-list,
 .contact-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav-list {
   display: flex;
 }
 

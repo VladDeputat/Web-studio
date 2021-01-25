@@ -1,20 +1,37 @@
 .footer .container {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--hero-and-footer-background-color);
 }
 
 .heading-footer {
   margin-bottom: 20px;
 }
 
+.info {
+  width: 270px;
+}
+
 .footer-list {
-  margin-left: 70px;
+  width: 270px;
   margin-top: 12px;
+  margin-left: 30px;
+}
+
+.footer .link-list {
+  justify-content: start;
 }
 
 .subscribe {
-  margin-left: 93px;
+  width: calc(100% / 2 - 15px);
   margin-top: 12px;
+  margin-left: 30px;
 }
 
 .form-footer {
