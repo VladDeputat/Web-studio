@@ -6,19 +6,34 @@
 .strength .name {
   margin-top: 30px;
   margin-bottom: 10px;
+  text-align: center;
+
+  @include for-size(tablet) {
+    text-align: left;
+  }
 }
 
 .strength .strength-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
   margin-top: -30px;
+
+  @include for-size(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
 }
 
 .strength-list .item {
-  margin-left: 30px;
   margin-top: 30px;
-  flex-basis: calc(100% / 4 - 30px);
+
+  @include for-size(tablet) {
+    margin-left: 30px;
+    flex-basis: calc(100% / 2 - 30px);
+  }
+
+  @include for-size(desktop) {
+    flex-basis: calc(100% / 4 - 30px);
+  }
 
   &::before {
     display: block;
