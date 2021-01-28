@@ -110,7 +110,7 @@ body {
 }
 
 .form-heading {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 20px;
   line-height: 23px;
   letter-spacing: 0.03em;
@@ -543,7 +543,37 @@ button {
   background-position: center;
   background-repeat: no-repeat;
   background-color: var(--hero-and-footer-background-color);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/hero/hero-mobile.jpg);
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/hero/hero-mobile@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/hero/hero-tablet.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/hero/hero-tablet@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/hero/hero-desktop.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/hero/hero-desktop@2x.jpg);
+  }
 }
 
 .hero-content {
@@ -613,19 +643,19 @@ button {
 }
 
 .strength .antenna::before {
-  background-image: url(../img/antenna.svg);
+  background-image: url(../img/svg/antenna.svg);
 }
 
 .strength .clock::before {
-  background-image: url(../img/clock.svg);
+  background-image: url(../img/svg/clock.svg);
 }
 
 .strength .diagram::before {
-  background-image: url(../img/diagram.svg);
+  background-image: url(../img/svg/diagram.svg);
 }
 
 .strength .astronaut::before {
-  background-image: url(../img/astronaut.svg);
+  background-image: url(../img/svg/astronaut.svg);
 }
 
 .businesses {
@@ -852,10 +882,8 @@ button {
 }
 
 .modal-window {
-  width: 100%;
-  max-width: 450px;
-  height: 90%;
-  max-height: 609px;
+  width: 90%;
+  height: 609px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -865,6 +893,21 @@ button {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   overflow: scroll;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-window {
+    width: 450px;
+    height: 609px;
+    overflow: hidden;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-window {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .close-modal {
@@ -937,8 +980,7 @@ button {
 
 .checkbox-label {
   cursor: pointer;
-  display: block;
-  position: relative;
+  margin-left: 24px;
 }
 
 .checkbox-label:before {
@@ -949,7 +991,6 @@ button {
   height: 16px;
   border-radius: 3px;
   position: absolute;
-  transform: translate(-125%, 10%);
 }
 
 .policy-checkbox:checked + .checkbox-label:before {
@@ -963,13 +1004,6 @@ button {
 .conditions-link {
   text-decoration: underline;
   color: var(--accent-color);
-}
-
-.checkbox-button-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .is-hidden {
@@ -1150,7 +1184,8 @@ button {
 
 .modal-window .button {
   padding: 10px 56px;
-  margin-top: 30px;
+  display: flex;
+  margin: 30px auto;
 }
 
 .hero .button {
