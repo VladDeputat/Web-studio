@@ -1,1 +1,4 @@
-# goit-markup-hw-07
+Landing project. Adaptive markup.
+- HTML
+- SASS
+- JS
